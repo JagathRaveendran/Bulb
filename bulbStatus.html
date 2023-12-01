@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bulb</title>
+    <style>
+        button
+        {
+            width: 80px;
+        }
+        .but1
+        {
+            background-color: white;
+            color: black;
+        }
+        .but2
+        {
+            background-color: black;
+            color: white;
+            outline: 2px;
+            outline-color: white;
+        }
+        div
+        {
+            text-align: center;
+        }
+        img
+        {
+            width: 80%;
+        }
+        body
+        {
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+    <div>
+    <img id="imgStatus" src="img/bulboff.jpg" alt=""> <br>
+    <button class="but1" onclick="turnOn()">Turn ON</button>
+    <button class="but2" onclick="turnOff()">Turn OFF</button>
+    </div>
+
+
+    <script>
+        function turnOn()
+        {
+            document.getElementById("imgStatus").src = "img/bulbon.jpg";
+        }
+        function turnOff()
+        {
+            document.getElementById("imgStatus").src = "img/bulboff.jpg";
+        }
+    </script>
+</body>
+</html>
